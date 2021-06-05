@@ -1,0 +1,247 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css variables  */
+:root{
+    --navbar-height: 59px;
+}
+
+/* nav bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+/*  nav bar:logo and image */
+#logo{
+    margin: 10px 20px;
+}
+
+#logo img{
+    height: 60px;
+    margin: 10px 20px;
+
+}
+/*  nav bar: List items */
+ 
+#navbar ul{
+    display: flex;
+    /* font-size: 1.5rem; */
+    /* font-family: 'Akaya Kanadaka', cursive; */
+    font-family: 'Shippori Mincho', serif;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(7, 1, 31);
+    position: absolute;
+    height: 98%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 40%;
+}
+#navbar ul li{
+    /* color: white; */
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    /* color:white;
+    background-color: black; */
+    display: block;
+    padding: 3px 22px;
+    border: 2px solid rgb(112, 214, 240);
+    /* border-color: rgb(112, 214, 240); */
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: rgb(7, 1, 31);
+    color: rgb(112, 214, 240);
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../images/bg2.png') no-repeat center center/cover ;
+    position: absolute;
+    height: 95%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 70%;
+}
+#home h1{
+    /* color: white; */
+    text-align: center;
+    /* font-family: 'Akaya Kanadaka', cursive; */
+    font-family: 'Shippori Mincho', serif;
+}
+#home p{
+    /* color: white; */
+    text-align: center;
+    font-size: 1.5rem;
+    /* font-family: 'Akaya Kanadaka', cursive; */
+    font-family: 'Shippori Mincho', serif;
+}
+/* services section */
+#services{
+   margin: 36px;
+   display: flex; 
+}
+#services .box{
+    border: 3px solid rgb(155, 16, 132);
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius:10px ;
+    background-color:rgb(243, 235, 235) ;
+
+}
+#services .box img{
+     /* height: 160px; */
+     height: 109px;
+     margin: auto;
+     display: block;
+}
+#services .box p{
+    font-family: 'Shippori Mincho', serif;
+
+}
+/* .services-container::before{
+    content:"";
+    position: absolute;
+    background: url('../images/bg3.png') ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 60%;
+} */
+/* Sponsor Section */
+#sponsor-section{
+    /* height: 344px; */
+    position: relative;
+}
+#sponsor-section::before{
+  content:"";
+  position: absolute;
+  background: url('../images/bg1.png') ;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 60%;
+}
+#sponsor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sponsor img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.sponsor-item{
+    padding: 34px; 
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 50%;
+    background: url('../images/contact\ us\ .png')no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    padding-bottom:34px;
+    align-items: center;
+}
+#contact-box input ,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+#contact-box form{
+    width: 40%;   
+}
+#contact-box label{
+    font-size: 1.1rem; 
+    font-family: 'Shippori Mincho', serif; 
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    font-size: 18px;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    font-family: 'Shippori Mincho', serif;
+    padding-top: 12px;
+    margin-top: 60px;
+    /* margin-bottom: 5px; */
+}
+.h-primary2{
+    font-size: 2.8rem;
+    font-family: 'Shippori Mincho', serif;
+    padding-top: 12px;
+    margin-top: 128px;
+    /* margin-bottom: 5px; */
+}
+.h-primary1{
+    font-size: 2.8rem;
+    font-family: 'Shippori Mincho', serif;
+    padding: 12px;
+    margin-top: 12px;
+    /* margin-bottom: 5px; */
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Shippori Mincho', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(112, 214, 240);
+    background-color: rgb(7, 1, 31);
+    color: rgb(112, 214, 240);
+    margin: 17px;
+    font-size: 25px;
+    font-family: 'Shippori Mincho', serif;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}

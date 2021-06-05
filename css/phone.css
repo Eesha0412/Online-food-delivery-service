@@ -1,0 +1,65 @@
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+}
+/* home */
+#home{
+height: 370px;
+padding: 1px 68px;
+}
+
+#home::before{
+height: 480px;
+}
+
+#home p{
+    font-size: 1rem;
+}
+
+
+/* services */
+#services{
+   flex-direction: column;
+}
+#services .box{
+
+    
+}
+#sponsor{
+  flex-wrap: wrap;
+}
+
+#sponsor img{
+    width: 40px;
+    padding: 10px;
+}
+#contact-box form{
+    width: 80%;
+}
+
+/* sponsors */
+
+/* contact us  */
+/* utility classes */
+.h-primary{
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.btn{
+    font-size: 13px;
+    padding: 0px 8px;
+    margin-top: 0px;
+
+}
+.h-primary2 {
+    font-size: 2.8rem;
+    font-family: 'Shippori Mincho', serif;
+    padding-top: 12px;
+    margin-top: 60px;
+    /* margin-bottom: 5px; */
+}
